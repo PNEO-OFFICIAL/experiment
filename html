@@ -41,13 +41,14 @@
         q3: document.getElementById("q3").value
       };
 
-      fetch("https://script.google.com/macros/s/AKfycbz231ZceJq94A51GTczH_YPGI6YNsrPKMOpb8sL209sUGM0OfDij4-5Iuqu2rP9bp2b2A/exec", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      })
+    fetch("https://script.google.com/macros/s/AKfycbya7-NurQCT4Qyk9utx5po4dgxMXGeQrZ3fmnL5Eum9NEtenHfqOyYC4OFaLQkUydXa/exec", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(data)
+})
+
       .then(res => res.text())
       .then(msg => {
         alert("제출 완료! 감사합니다.");
